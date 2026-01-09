@@ -1,6 +1,6 @@
 # GraphFrame-Neo4j
 
-A pandas-like interface for Neo4j with DataFrame-style querying and idempotent upserts.
+A pandas-like interface for Neo4j with DataFrame-style querying and idempotent upserts. Compile with uv :)
 
 ## Quick Start
 
