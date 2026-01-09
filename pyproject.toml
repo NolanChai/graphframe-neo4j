@@ -1,0 +1,57 @@
+[project]
+name = "graphframe-neo4j"
+version = "0.1.0"
+description = "A pandas-like interface for Neo4j with DataFrame-style querying and idempotent upserts"
+readme = "README.md"
+authors = [
+    { name = "Nolan Chai", email = "nochai@ucsd.edu" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "neo4j>=6.0.3",
+]
+
+[project.optional-dependencies]
+pandas = ["pandas>=2.0.0"]
+networkx = ["networkx>=3.0.0"]
+tqdm = ["tqdm>=4.0.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 120
+indent-width = 4
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+markers = [
+    "integration: mark tests as integration tests (require Neo4j)",
+]
+addopts = ["-m", "not integration"]
+
+[tool.mypy]
+python_version = "3.13"
+warn_return_any = true
+warn_unused_configs = true
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "pytest-cov>=7.0.0",
+]
+devtools = [
+    "rich>=14.2.0",
+]
+lint = [
+    "ruff>=0.14.11",
+]
+types = [
+    "mypy>=1.19.1",
+]

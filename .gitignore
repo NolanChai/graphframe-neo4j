@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# Environment variables
+.env
+.env.local
+.env*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Python cache
+.pytest_cache/
+.hypothesis/
+
+# Coverage
+.htmlcov/
+.coverage
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Docker
+.dockerignore
+
+# Logs
+logs/
+*.log
+
+# Database
+data/
+*.db
+*.sqlite
+
+# Tests
+/test_results/
+
+# Documentation
+/docs/_build/
+
+# Misc
+*.bak
+*.tmp
+*.backup
+
+# Specific to this project
+test_data/
+neo4j_data/
