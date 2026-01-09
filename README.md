@@ -1,5 +1,6 @@
 # GraphFrame-Neo4j
 
+[Currently in Pre-release for testing, will upload package later to Pypi]
 A pandas-like interface for Neo4j with DataFrame-style querying and idempotent upserts. Compile with uv :)
 
 ## Quick Start
