@@ -2,6 +2,7 @@
 
 **In-Depth Implementation Details and Architecture**
 
+Summarized by Mistral**
 ## Table of Contents
 
 1. [Architecture Overview](#architecture-overview)
